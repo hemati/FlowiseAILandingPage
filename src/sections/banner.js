@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { Link } from "components/link";
 import { FaPlayCircle } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 
 import BannerBG from "assets/bannerBg.png";
 import BannerThumb from "assets/banner-thumb.png";
@@ -41,7 +40,7 @@ export default function Banner() {
     e.preventDefault();
     setVideoOpen(true);
   };
-  const handleViewGithubClick = (e) => {
+  const handleViewSignUpClick = (e) => {
     e.preventDefault();
     window.open("https://github.com/FlowiseAI/Flowise", "_blank");
   };
@@ -57,17 +56,15 @@ export default function Banner() {
             Build LLMs Apps Easily
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Open source UI visual tool to build your customized LLM flow using
-            LangchainJS, written in Node Typescript/Javascript
+            UI visual tool to build your customized LLM flow
           </Text>
           <Flex>
             <Button
               variant="whiteButton"
-              aria-label="View Github"
-              onClick={handleViewGithubClick}
+              aria-label="Sign Up"
+              onClick={handleViewSignUpClick}
             >
-              <FaGithub />
-              &nbsp; Star ⭐ Github
+              Sign Up
             </Button>
             {/*<>
               <ModalVideo

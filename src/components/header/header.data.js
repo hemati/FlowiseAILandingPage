@@ -15,8 +15,8 @@ export default [
     path: "howitworks",
     label: "How It Works",
   },
-  {
-    path: "faq",
-    label: "FAQ",
-  },
+  // {
+  //   path: "faq",
+  //   label: "FAQ",
+  // },
 ];

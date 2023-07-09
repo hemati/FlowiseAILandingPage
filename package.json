@@ -7,7 +7,8 @@
     "build": "next build",
     "serve": "next start",
     "export": "next export",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "start": "next start -p 8080"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -19,10 +20,10 @@
     "next-optimized-images": "^2.5.4",
     "prettier": "^2.1.2",
     "rc-drawer": "^4.1.0",
-    "react": "16.13.0",
+    "react": "^17.0.1",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "16.13.0",
-    "react-ga": "^3.1.2",
+    "react-dom": "^17.0.1",
+    "react-ga": "^3.3.1",
     "react-icons": "^3.10.0",
     "react-modal-video": "1.2.6",
     "react-multi-carousel": "^2.5.5",

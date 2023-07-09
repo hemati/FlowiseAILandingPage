@@ -8,13 +8,13 @@ import Editing from "assets/key-feature/editing.svg";
 import Speed from "assets/key-feature/speed.svg";
 
 const data = [
-  {
-    id: 2,
-    imgSrc: Editing,
-    altText: "OpenSource",
-    title: "Open Source",
-    text: "Open source MIT license",
-  },
+  // {
+  //   id: 2,
+  //   imgSrc: Editing,
+  //   altText: "OpenSource",
+  //   title: "Open Source",
+  //   text: "Open source MIT license",
+  // },
   {
     id: 1,
     imgSrc: Speed,
@@ -24,7 +24,7 @@ const data = [
   },
 
   {
-    id: 3,
+    id: 2,
     imgSrc: Vector,
     altText: "Extensible Component",
     title: "Extensible Component",
@@ -63,8 +63,8 @@ const styles = {
       "repeat(1,1fr)",
       null,
       "repeat(2,1fr)",
-      null,
-      "repeat(3,1fr)",
+      // null,
+      // "repeat(3,1fr)",
     ],
     width: ["100%", "80%", "100%"],
     mx: "auto",

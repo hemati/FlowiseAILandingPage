@@ -8,7 +8,6 @@ import LogoWhite from "assets/flowise_logo_dark.png";
 import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
-import { FaGithub } from "react-icons/fa";
 
 export default function Header({ className }) {
   const handleOpenAppClick = (e) => {
@@ -40,11 +39,10 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            aria-label="Star Github"
+            aria-label="Sign Up"
             onClick={handleOpenAppClick}
           >
-            <FaGithub />
-            &nbsp; Star ⭐ Github
+            Sign Up
           </Button>
 
           <MobileDrawer />

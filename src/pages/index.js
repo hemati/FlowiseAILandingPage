@@ -10,6 +10,7 @@ import CoreFeature0 from "sections/core-feature-0";
 import CoreFeature1 from "sections/core-feature-1";
 import CoreFeature2 from "sections/core-feature-2";
 import CoreFeature3 from "sections/core-feature-3";
+import CoreFeature4 from "sections/core-feature-4";
 import Feature from "sections/feature";
 import PartnerSection from "sections/partner";
 import WorkFlow from "sections/workflow";
@@ -30,8 +31,9 @@ export default function IndexPage() {
           <CoreFeature1 />
           <CoreFeature2 />
           <CoreFeature3 />
+          <CoreFeature4 />
           <WorkFlow />
-          <Faq />
+          {/*<Faq />*/}
         </Layout>
       </StickyProvider>
     </ThemeProvider>
