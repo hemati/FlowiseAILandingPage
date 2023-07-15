@@ -6,4 +6,4 @@ Allow: /
 Host: https://langchain.space
 
 # Sitemaps
-Sitemap: https://lanchain.space/sitemap.xml
+Sitemap: https://langchain.space/sitemap.xml
