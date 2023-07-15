@@ -24,7 +24,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="FlowiseAI - Build LLMs Apps Easily" />
+          <SEO title="Langchain.Space - Build LLMs Apps Easily" />
           <Banner />
           <KeyFeature />
           <CoreFeature0 />

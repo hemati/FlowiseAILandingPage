@@ -32,7 +32,7 @@ export default [
         label: "Book Demo",
       },
       {
-        path: "mailto:hello@flowiseai.com",
+        path: "mailto:w.hemati@gmail.com",
         label: "Email",
       },
       {

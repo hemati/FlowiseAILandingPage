@@ -42,11 +42,11 @@ export default function Banner() {
   };
   const handleViewSignUpClick = (e) => {
     e.preventDefault();
-    window.open("https://github.com/FlowiseAI/Flowise", "_blank");
+    window.open("https://dashboard.langchain.space");
   };
   const handleOpenAppClick = (e) => {
     e.preventDefault();
-    window.open("https://app.flowiseai.com", "_blank");
+    window.open("https://dashboard.langchain.space", "_blank");
   };
   return (
     <section sx={styles.banner} id="home">

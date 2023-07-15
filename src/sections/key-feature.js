@@ -36,7 +36,7 @@ export default function KeyFeature() {
   return (
     <section sx={{ variant: "section.keyFeature" }} id="whyus">
       <Container>
-        <SectionHeader slogan="" title="Why use Flowise?" />
+        <SectionHeader slogan="" title="Why use Langchain.Space?" />
 
         <Grid sx={styles.grid}>
           {data.map((item) => (

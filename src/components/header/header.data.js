@@ -5,7 +5,7 @@ export default [
   },
   {
     path: "whyus",
-    label: "Why Flowise",
+    label: "Why Langchain.Space",
   },
   {
     path: "feature",

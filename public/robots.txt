@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://flowiseai.com
+Host: https://langchain.space
 
 # Sitemaps
-Sitemap: https://flowiseai.com/sitemap.xml
+Sitemap: https://lanchain.space/sitemap.xml

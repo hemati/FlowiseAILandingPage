@@ -3,8 +3,8 @@ import { jsx, Container, Flex, Button } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import { Link } from "react-scroll";
 import Logo from "components/logo";
-import LogoDark from "assets/flowise_logo.png";
-import LogoWhite from "assets/flowise_logo_dark.png";
+import LogoDark from "assets/logo.png";
+import LogoWhite from "assets/logo.png";
 import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
@@ -12,13 +12,13 @@ import menuItems from "./header.data";
 export default function Header({ className }) {
   const handleOpenAppClick = (e) => {
     e.preventDefault();
-    window.open("https://github.com/FlowiseAI/Flowise", "_blank");
+    window.open("https://dashboard.langchain.space");
   };
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={className === "sticky" ? LogoDark : LogoWhite} />
+          <Logo src={className === "sticky" ? LogoDark : LogoWhite} text={"Langchain.Space"}/>
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (

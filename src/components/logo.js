@@ -2,7 +2,7 @@
 import { jsx, Image } from "theme-ui";
 import { Link } from "components/link";
 
-export default function Logo({ src, ...rest }) {
+export default function Logo({ src, text, ...rest }) {
   return (
     <Link
       path="/"
@@ -10,11 +10,18 @@ export default function Logo({ src, ...rest }) {
         variant: "links.logo",
         display: "flex",
         cursor: "pointer",
+        alignItems: 'center',
+        flexDirection: 'row',
         mr: 15,
+          textDecoration:'none',
+          color:"white",
+          fontSize:24
       }}
       {...rest}
     >
-      <Image sx={{ width: "60%" }} src={src} alt="FlowiseAI landing logo" />
+      <Image sx={{ objectFit: 'contain', height: 'auto', width: 50, marginRight: 2}}
+             src={src} alt={text} />
+        {text}
     </Link>
   );
 }

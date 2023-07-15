@@ -24,12 +24,12 @@ export default function Footer() {
           ))}
         </Box>
       </Container>*/}
-      <Text sx={styles.footer.copyright}>
-        All right reserved - Design & Developed by
-        <Link path="https://flowiseai.com/" target="_blank">
-          FlowiseAI, Inc
-        </Link>
-      </Text>
+      {/*<Text sx={styles.footer.copyright}>*/}
+      {/*  All right reserved - Design & Developed by*/}
+      {/*  <Link path="https://langchain.space/" target="_blank">*/}
+      {/*    Langchain.Space, Inc*/}
+      {/*  </Link>*/}
+      {/*</Text>*/}
     </footer>
   );
 }
