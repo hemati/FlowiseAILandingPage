@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { Link } from "components/link";
 import { FaPlayCircle } from "react-icons/fa";
+import TagManager from 'react-gtm-module';
+
 
 import BannerBG from "assets/bannerBg.png";
 import BannerThumb from "assets/banner-thumb.png";
@@ -34,6 +36,23 @@ const data = [
   },
 ];
 
+// Define the conversion function
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) !== 'undefined') {
+      console.log('gtag_report_conversion callback')
+    }
+  };
+  TagManager.dataLayer({
+    dataLayer: {
+      event: 'conversion',
+      send_to: 'AW-11266189727/II07COiG670YEJ_Tkfwp',
+      event_callback: callback
+    }
+  });
+  return false;
+}
+
 export default function Banner() {
   const [videoOpen, setVideoOpen] = useState(false);
   const handleClick = (e) => {
@@ -42,6 +61,8 @@ export default function Banner() {
   };
   const handleViewSignUpClick = (e) => {
     e.preventDefault();
+    gtag_report_conversion('https://dashboard.langchain.space');
+    //console.log('handleViewSignUpClick');
     window.open("https://dashboard.langchain.space");
   };
   const handleOpenAppClick = (e) => {
