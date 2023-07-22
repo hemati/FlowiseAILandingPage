@@ -27,12 +27,12 @@ export default function IndexPage() {
           <SEO title="Langchain.Space - Build LLMs Apps Easily" />
           <Banner />
           <KeyFeature />
+          <WorkFlow />
           <CoreFeature0 />
           <CoreFeature1 />
           <CoreFeature2 />
           <CoreFeature3 />
           <CoreFeature4 />
-          <WorkFlow />
           {/*<Faq />*/}
         </Layout>
       </StickyProvider>
