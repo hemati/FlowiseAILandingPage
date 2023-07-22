@@ -18,21 +18,8 @@ import TestimonialCard from "sections/testimonial";
 import SecurePayment from "sections/secure-payment";
 import Package from "sections/package";
 import Faq from "sections/faq";
-import TagManager from 'react-gtm-module';
 
 export default function IndexPage() {
-  useEffect(() => {
-    const tagManagerArgs = {
-      gtmId: 'AW-11266189727', // Update this to your Google Tag Manager ID
-      dataLayer: {
-        js: new Date(),
-      },
-    };
-
-    // Initialize Google Tag Manager
-    TagManager.initialize(tagManagerArgs);
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>

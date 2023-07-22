@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Router from 'next/router';
 import { initGA, logPageView } from 'analytics';
+import { initGAds, gtag_report_conversion } from 'ads';
 // Load DM Sans typeface
 import 'typeface-dm-sans';
 
@@ -16,5 +17,8 @@ export default function CustomApp({ Component, pageProps }) {
     Router.events.on('routeChangeComplete', logPageView);
   }, []);
 
+  useEffect(() => {
+    initGAds();
+  }, []);
   return <Component {...pageProps} />;
 }
