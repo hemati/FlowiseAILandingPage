@@ -21,7 +21,21 @@ export default function Header({ className }) {
           <Logo src={className === "sticky" ? LogoDark : LogoWhite} text={"Langchain.Space"}/>
 
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
+            {menuItems.map(({ path, label, external }, i) => (
+                external ?
+                <a
+                  href={path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={i}
+                  style={{
+                          color: "white",
+                          textDecoration: "none",
+                        }}
+                >
+                  {label}
+                </a>
+              :
               <Link
                 activeClass="active"
                 to={path}

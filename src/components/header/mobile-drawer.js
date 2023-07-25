@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box } from 'theme-ui';
+import {Box, jsx} from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
@@ -59,7 +59,21 @@ const MobileDrawer = () => {
       <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
+            {menuItems.map(({ path, label, external}, i) => (
+                external ?
+                <a
+                  href={path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={i}
+                  style={{
+                            color: "text_white",
+                          textDecoration: "none",
+                        }}
+                >
+                  {label}
+                </a>
+              :
               <Link
                 activeClass="active"
                 to={path}

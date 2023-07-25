@@ -15,6 +15,11 @@ export default [
     path: "howitworks",
     label: "How It Works",
   },
+  {
+    path: "https://docs.langchain.space",
+    label: "Docs",
+    external: true,
+  },
   // {
   //   path: "faq",
   //   label: "FAQ",
