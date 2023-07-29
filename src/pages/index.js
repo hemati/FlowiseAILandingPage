@@ -33,6 +33,7 @@ export default function IndexPage() {
           <CoreFeature2 />
           <CoreFeature3 />
           <CoreFeature4 />
+          {/*<Package />*/}
           {/*<Faq />*/}
         </Layout>
       </StickyProvider>

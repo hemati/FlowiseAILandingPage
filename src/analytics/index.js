@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export const initGA = () => {
   console.log('GA init');
@@ -7,13 +7,16 @@ export const initGA = () => {
 
 export const logPageView = () => {
   console.log(`Logging pageview for ${window.location.pathname}`);
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: document.title+"testtest" });
 };
 
 export const logEvent = (category = '', action = '') => {
   if (category && action) {
-    ReactGA.event({ category, action });
+    ReactGA.event({
+      category: category,
+      action: action,
+      nonInteraction: true
+    });
   }
 };
 

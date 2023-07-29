@@ -7,71 +7,60 @@ import PatternBG from 'assets/patternBG.png';
 
 const packages = [
   {
-    name: 'Free Plan',
-    description: 'For Small teams or office',
-    buttonText: 'Signup Now',
+    header: 'Free',
+    name: 'Basic Plan',
+    description: 'For individual projects',
+    priceWithUnit: '$0.00/',
+    buttonText: 'Start for Free',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'Ultimate access to all predefined flows',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text:
-          'Free access for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: 'Free access for all predefined tools.',
         isAvailable: true,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
+        text: 'Unlimited number of flows can be created',
         isAvailable: false,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: 'Premium support from our expert team',
         isAvailable: false,
-      },
+      }
     ],
   },
   {
     header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    priceWithUnit: '$29.99/',
-    buttonText: 'Signup Now',
+    name: 'Premium Plan',
+    priceWithUnit: '$9.99/',
+    buttonText: 'Start for Free',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'Ultimate access to all predefined flows',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text:
-          'Free access for all kind of exercise corrections with downloads.',
+        text: 'Access to all predefined tools.',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: 'Unlimited number of flows can be created',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
+        text: 'Premium support from our expert team',
         isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: true,
-      },
+      }
     ],
   },
 ];
@@ -80,8 +69,7 @@ export default function Package() {
     <section id="pricing" sx={styles.pricing}>
       <Container>
         <SectionHeader
-          title="Let’s see how it works"
-          slogan="Whats the function"
+          title="Plan Options"
           isWhite={true}
         />
         <Flex

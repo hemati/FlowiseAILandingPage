@@ -33,14 +33,18 @@ export default function PriceCard({
               {description}
             </Text>
           </Box>
-          {header && (
+          {header!=="Free" && (
             <Text className="package__price" sx={styles.price}>
               <span>Starting from</span>
               <div className="price">
                 {priceWithUnit}
                 <sub>mo</sub>
               </div>
+              <span>Free 7-Day Trial</span>
             </Text>
+          )}
+          {header==="Free" && (
+              <div style={{marginTop: 98}}></div>
           )}
         </Flex>
         <List items={points} childStyle={styles.listItem} />
@@ -161,6 +165,7 @@ const styles = {
     '> .price': {
       marginBottom: 0,
       color: 'secondary',
+      textDecoration: 'line-through',
       '> sub': {
         position: 'relative',
         bottom: '6px',
