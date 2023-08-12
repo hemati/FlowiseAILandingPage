@@ -3,9 +3,10 @@ import { jsx } from "theme-ui";
 import { Container, Flex, Box, Heading, Text, Image, Button } from "theme-ui";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
-import { Link } from "components/link";
+// import { Link } from "components/link";
 import { FaPlayCircle } from "react-icons/fa";
 import { gtag_report_conversion } from 'ads';
+import { Link } from "react-scroll";
 
 
 import BannerBG from "assets/bannerBg.png";
@@ -63,13 +64,28 @@ export default function Banner() {
             UI visual tool to build your customized LLM flow
           </Text>
           <Flex>
+            {/*<Button*/}
+            {/*  variant="whiteButton"*/}
+            {/*  aria-label="Sign Up"*/}
+            {/*  onClick={handleViewSignUpClick}*/}
+            {/*>*/}
+            {/*  Sign Up*/}
+            {/*</Button>*/}
             <Button
-              variant="whiteButton"
-              aria-label="Sign Up"
-              onClick={handleViewSignUpClick}
+              className="donate__btn"
+              variant="secondary"
             >
-              Sign Up
+              <Link
+                  to="pricing"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  key={1}
+                >
+                Sign Up
+              </Link>
             </Button>
+
             {/*<>
               <ModalVideo
                 channel="youtube"

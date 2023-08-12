@@ -18,10 +18,10 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={className === "sticky" ? LogoDark : LogoWhite} text={"Langchain.Space"}/>
+          <Logo src={className === "sticky" ? LogoDark : LogoWhite} text={"LangChain.Space"}/>
 
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label, external }, i) => (
+            {menuItems.map(({ path, label, external , offset=-70}, i) => (
                 external ?
                 <a
                   href={path}
@@ -41,7 +41,7 @@ export default function Header({ className }) {
                 to={path}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={offset}
                 duration={500}
                 key={i}
               >
@@ -53,11 +53,21 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            aria-label="Sign Up"
-            onClick={handleOpenAppClick}
+            // aria-label="Sign Up"
+            // onClick={handleOpenAppClick}
           >
-            Sign Up
+            <Link
+                to="pricing"
+                spy={true}
+                smooth={true}
+                duration={500}
+                key={100}
+              >
+              Sign Up
+            </Link>
           </Button>
+
+
 
           <MobileDrawer />
         </Container>

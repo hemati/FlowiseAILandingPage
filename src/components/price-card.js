@@ -9,11 +9,13 @@ export default function PriceCard({
     description,
     priceWithUnit,
     buttonText = 'Start Free Trial',
+    buttonEnable = true,
     points,
+    onClickHandler = null
   },
 }) {
   return (
-    <Card className={header ? 'active' : null} sx={styles.pricingBox}>
+    <Card className={`${header ? 'active' : ''} ${!buttonEnable ? 'disabled' : ''}`} sx={styles.pricingBox} >
       {header && <Text sx={styles.header}>{header}</Text>}
       <Box>
         <Flex sx={styles.pricingHeader}>
@@ -57,6 +59,8 @@ export default function PriceCard({
           <Button
             variant={header ? 'primary' : 'whiteButton'}
             aria-label={buttonText}
+            disabled={!buttonEnable}
+            onClick={onClickHandler}
           >
             {buttonText}
           </Button>
@@ -77,6 +81,10 @@ const styles = {
       '0 1 40%',
       '0 1 38.5%',
     ],
+    '&.disabled': {
+      filter: 'grayscale(100%)',
+      pointerEvents: 'none',
+    },
     background: '#2F5392',
     borderRadius: 10,
     ml: [0, null, null, 5],

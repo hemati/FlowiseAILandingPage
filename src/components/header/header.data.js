@@ -7,13 +7,14 @@ export default [
     path: "whyus",
     label: "Why Langchain.Space",
   },
+  // {
+  //   path: "howitworks",
+  //   label: "Examples",
+  // },
   {
-    path: "feature",
-    label: "Examples",
-  },
-  {
-    path: "howitworks",
-    label: "How It Works",
+    path: "pricing",
+    label: "Pricing",
+    offset: 70
   },
   {
     path: "https://docs.langchain.space",

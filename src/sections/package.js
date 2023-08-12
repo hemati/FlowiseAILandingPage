@@ -4,6 +4,14 @@ import PriceCard from 'components/price-card';
 import SectionHeader from 'components/section-header';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
 import PatternBG from 'assets/patternBG.png';
+import {gtag_report_conversion} from "../ads";
+
+const handleViewSignUpClick = (e) => {
+  e.preventDefault();
+  gtag_report_conversion();
+  //console.log('handleViewSignUpClick');
+  window.open("https://dashboard.langchain.space");
+}
 
 const packages = [
   {
@@ -34,12 +42,14 @@ const packages = [
         isAvailable: false,
       }
     ],
+    onClickHandler: handleViewSignUpClick
   },
   {
     header: 'Recommended',
     name: 'Premium Plan',
     priceWithUnit: '$9.99/',
-    buttonText: 'Start for Free',
+    buttonText: 'Coming Soon',
+    buttonEnable: false,
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
@@ -62,6 +72,7 @@ const packages = [
         isAvailable: true,
       }
     ],
+    onClickHandler: null
   },
 ];
 export default function Package() {
