@@ -21,6 +21,11 @@ export default [
     label: "Docs",
     external: true,
   },
+  {
+    path: "https://dashboard.langchain.space",
+    label: "Sign in",
+    external: true,
+  },
   // {
   //   path: "faq",
   //   label: "FAQ",

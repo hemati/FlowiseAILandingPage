@@ -82,7 +82,7 @@ export default function Banner() {
                   duration={500}
                   key={1}
                 >
-                Sign Up
+                Start for free
               </Link>
             </Button>
 

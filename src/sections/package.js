@@ -19,7 +19,7 @@ const packages = [
     name: 'Basic Plan',
     description: 'For individual projects',
     priceWithUnit: '$0.00/',
-    buttonText: 'Start for Free',
+    buttonText: 'Sign up',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,

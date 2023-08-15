@@ -63,7 +63,7 @@ export default function Header({ className }) {
                 duration={500}
                 key={100}
               >
-              Sign Up
+              Start for free
             </Link>
           </Button>
 
