@@ -18,8 +18,12 @@ import TestimonialCard from "sections/testimonial";
 import SecurePayment from "sections/secure-payment";
 import Package from "sections/package";
 import Faq from "sections/faq";
+import useChatbot from 'hooks/useChatbot';
+
 
 export default function IndexPage() {
+  useChatbot(); // This initializes the chatbot
+
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
