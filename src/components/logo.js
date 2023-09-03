@@ -4,6 +4,7 @@ import { Link } from "components/link";
 
 export default function Logo({ src, text, ...rest }) {
   return (
+  <div sx={{width: "25%", overflowX: "hidden"}}>
     <Link
       path="/"
       sx={{
@@ -23,5 +24,6 @@ export default function Logo({ src, text, ...rest }) {
              src={src} alt={text} />
         {text}
     </Link>
+  </div>
   );
 }
