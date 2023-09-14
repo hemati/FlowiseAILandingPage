@@ -6,13 +6,16 @@ function useChatbot() {
     // Ensure the script is only loaded once
     if (window.Chatbot) return;
 
+    // Function to check if the user is on a mobile device
+    const isMobile = window.innerWidth <= 768;
+
     // Dynamically load the script
     const script = document.createElement('script');
     script.type = 'module';
     script.src = 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
     script.onload = () => {
       window.Chatbot.init({
-        chatflowid: '3e2f6c9d-5c20-4389-a3ea-2a9f516f746b',
+        chatflowid: '2ca663d8-6392-4c74-80aa-ff68b1ba883d',
         apiHost: 'https://dashboard.langchain.space',
         theme: {
             button: {
@@ -27,9 +30,9 @@ function useChatbot() {
                 welcomeMessage: "Hello! I am an AI assistant build with LangChain.Space. I can help you with your LLMs. " +
                     "How can I help you today?",
                 backgroundColor: "#ffffff",
-                height: 700,
+                height: isMobile ? 400 : 700,  // Set height based on the device type
                 width: 400,
-                fontSize: 16,
+                fontSize: isMobile ? 14 : 16,
                 poweredByTextColor: "white",
                 botMessage: {
                     backgroundColor: "#f7f8ff",
