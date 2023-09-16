@@ -12,7 +12,7 @@ function useChatbot() {
     // Dynamically load the script
     const script = document.createElement('script');
     script.type = 'module';
-    script.src = 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
+    script.src = 'https://cdn.jsdelivr.net/gh/hemati/FlowiseChatEmbed/dist/web.js';
     script.onload = () => {
       window.Chatbot.init({
         chatflowid: '2ca663d8-6392-4c74-80aa-ff68b1ba883d',
