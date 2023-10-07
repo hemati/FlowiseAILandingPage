@@ -61,16 +61,26 @@ export default function Banner() {
             Build LLMs Apps Easily
           </Heading>
           <Text as="p" variant="heroSecondary">
-            UI visual tool to build your customized LLM flow
+            A UI visual tool for creating customized LLM flows built on top of{" "}
+            <a
+              href="https://github.com/langchain-ai/langchain"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'inherit', textDecoration: 'underline' }}
+            >
+              LangChain
+            </a>
+            {" "}and{" "}
+            <a
+              href="https://github.com/FlowiseAI/Flowise"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'inherit', textDecoration: 'underline', zIndex: 100 }}
+            >
+              FlowiseAI
+            </a>.
           </Text>
           <Flex>
-            {/*<Button*/}
-            {/*  variant="whiteButton"*/}
-            {/*  aria-label="Sign Up"*/}
-            {/*  onClick={handleViewSignUpClick}*/}
-            {/*>*/}
-            {/*  Sign Up*/}
-            {/*</Button>*/}
             <Button
               className="donate__btn"
               variant="secondary"
@@ -85,32 +95,7 @@ export default function Banner() {
                 Start for free
               </Link>
             </Button>
-
-            {/*<>
-              <ModalVideo
-                channel="youtube"
-                isOpen={videoOpen}
-                videoId="ZNA9rmDsYVE"
-                onClose={() => setVideoOpen(false)}
-              />
-              <Button
-                variant="textButton"
-                aria-label="Watch Video"
-                onClick={handleClick}
-              >
-                <FaPlayCircle /> Watch Video
-              </Button>
-            </>*/}
           </Flex>
-          {/*<Flex sx={styles.sponsorBox}>
-            <Box sx={styles.sponsorBox.sponsor}>
-              {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`}>
-                  <Image src={item.image} alt={item.title} />
-                </Link>
-              ))}
-            </Box>
-              </Flex>*/}
         </Box>
 
         <Box sx={styles.banner.imageBox}>
