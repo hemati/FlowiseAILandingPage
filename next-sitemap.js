@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://langchain.space",
+  siteUrl: "https://langflux.space",
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {

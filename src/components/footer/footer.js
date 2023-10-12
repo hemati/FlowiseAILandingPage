@@ -26,8 +26,8 @@ export default function Footer() {
       </Container>*/}
       {/*<Text sx={styles.footer.copyright}>*/}
       {/*  All right reserved - Design & Developed by*/}
-      {/*  <Link path="https://langchain.space/" target="_blank">*/}
-      {/*    Langchain.Space, Inc*/}
+      {/*  <Link path="https://langflux.space/" target="_blank">*/}
+      {/*    langflux.space, Inc*/}
       {/*  </Link>*/}
       {/*</Text>*/}
     </footer>

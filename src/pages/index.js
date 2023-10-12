@@ -28,7 +28,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Langchain.Space - Build LLMs Apps Easily" />
+          <SEO title="LangFlux - Build LLMs Apps Easily" />
           <Banner />
           <KeyFeature />
           <WorkFlow />

@@ -16,7 +16,7 @@ function useChatbot() {
     script.onload = () => {
       window.Chatbot.init({
         chatflowid: '2ca663d8-6392-4c74-80aa-ff68b1ba883d',
-        apiHost: 'https://dashboard.langchain.space',
+        apiHost: 'https://dashboard.langflux.space',
         theme: {
             button: {
                 backgroundColor: "#3B81F6",
@@ -27,7 +27,7 @@ function useChatbot() {
                 customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
             },
             chatWindow: {
-                welcomeMessage: "Hello! I am an AI assistant build with LangChain.Space. I can help you with your LLMs. " +
+                welcomeMessage: "Hello! I am an AI assistant build with LangFlux. I can help you with your LLMs. " +
                     "How can I help you today?",
                 backgroundColor: "#ffffff",
                 height: isMobile ? 400 : 700,  // Set height based on the device type

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://langchain.space
+Host: https://langflux.space
 
 # Sitemaps
-Sitemap: https://langchain.space/sitemap.xml
+Sitemap: https://langflux.space/sitemap.xml

@@ -5,7 +5,7 @@ export default [
   },
   {
     path: "whyus",
-    label: "Why Langchain.Space",
+    label: "Why LangFlux",
   },
   // {
   //   path: "howitworks",
@@ -17,12 +17,12 @@ export default [
     offset: 70
   },
   {
-    path: "https://docs.langchain.space",
+    path: "https://docs.langflux.space",
     label: "Docs",
     external: true,
   },
   {
-    path: "https://dashboard.langchain.space",
+    path: "https://dashboard.langflux.space",
     label: "Sign in",
     external: true,
   },

@@ -2,8 +2,8 @@ import React from "react";
 import Head from "next/head";
 
 export default function SEO({
-  description = "UI visual tool to build your customized LLM flow using Langchain and Flowise",
-  author = "LangChain.Space",
+  description = "UI visual tool to build your customized LLM flow using LangChain and FlowiseAI",
+  author = "LangFlux",
   meta,
   title = "Build LLMs Apps Easily",
 }) {

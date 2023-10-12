@@ -47,11 +47,11 @@ export default function Banner() {
     e.preventDefault();
     gtag_report_conversion();
     //console.log('handleViewSignUpClick');
-    window.open("https://dashboard.langchain.space");
+    window.open("https://dashboard.langflux.space");
   };
   const handleOpenAppClick = (e) => {
     e.preventDefault();
-    window.open("https://dashboard.langchain.space", "_blank");
+    window.open("https://dashboard.langflux.space", "_blank");
   };
   return (
     <section sx={styles.banner} id="home">

@@ -12,13 +12,13 @@ import menuItems from "./header.data";
 export default function Header({ className }) {
   const handleOpenAppClick = (e) => {
     e.preventDefault();
-    window.open("https://dashboard.langchain.space");
+    window.open("https://dashboard.langflux.space");
   };
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={className === "sticky" ? LogoDark : LogoWhite} text={"LangChain.Space"}/>
+          <Logo src={className === "sticky" ? LogoDark : LogoWhite} text={"LangFlux"}/>
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label, external , offset=-70}, i) => (

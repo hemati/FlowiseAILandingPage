@@ -10,7 +10,7 @@ const handleViewSignUpClick = (e) => {
   e.preventDefault();
   gtag_report_conversion();
   //console.log('handleViewSignUpClick');
-  window.open("https://dashboard.langchain.space");
+  window.open("https://dashboard.langflux.space");
 }
 
 const packages = [
