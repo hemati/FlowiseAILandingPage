@@ -19,4 +19,8 @@ export default [
     path: "faq",
     label: "FAQ",
   },
+  {
+    path: "https://docs.flowiseai.com/",
+    label: "DOCS",
+  },
 ];

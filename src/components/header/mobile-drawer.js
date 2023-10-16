@@ -59,19 +59,28 @@ const MobileDrawer = () => {
       <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
-              <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </Link>
-            ))}
+            {menuItems.map(({ path, label }, i) => {
+              if (label === 'DOCS')
+                return (
+                  <a href={path} target="_blank" style={{
+                    textDecoration: "none"
+                  }}>
+                    {label}</a>
+                )
+              return (
+                <Link
+                  activeClass="active"
+                  to={path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  key={i}
+                >
+                  {label}
+                </Link>
+              )
+            })}
           </Box>
 
           <Box sx={styles.menuFooter}>
