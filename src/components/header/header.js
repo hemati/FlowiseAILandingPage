@@ -23,7 +23,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => {
-              if (label === 'DOCS')
+              if (label === 'Documentation')
                 return (
                   <a href={path} target="_blank" sx={styles.a}>
                     {label}</a>
@@ -120,6 +120,9 @@ const styles = {
     justifyContent: "space-between",
   },
   nav: {
+    "align-items": "center",
+    "display": "flex",
+    "justify-content": "center",
     mx: "auto",
     display: "none",
     "@media screen and (min-width: 1024px)": {
