@@ -5,10 +5,12 @@ import SectionHeader from 'components/section-header';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
 import PatternBG from 'assets/patternBG.png';
 import {gtag_report_conversion} from "../ads";
+import { logFirebaseEvent } from '../firebaseAnalytics';
 
 const handleViewSignUpClick = (e) => {
   e.preventDefault();
   gtag_report_conversion();
+  logFirebaseEvent("click_sign_up");
   //console.log('handleViewSignUpClick');
   window.open("https://dashboard.langflux.space");
 }
