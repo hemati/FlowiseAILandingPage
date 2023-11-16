@@ -8,10 +8,13 @@ import LogoWhite from "assets/logo.png";
 import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
+import {gtag_report_conversion} from "../../ads";
 
 export default function Header({ className }) {
-  const handleOpenAppClick = (e) => {
+  const handleViewSignUpClick = (e) => {
     e.preventDefault();
+    gtag_report_conversion();
+    //console.log('handleViewSignUpClick');
     window.open("https://dashboard.langflux.space");
   };
   return (
@@ -53,18 +56,19 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            // aria-label="Sign Up"
-            // onClick={handleOpenAppClick}
+            aria-label="Start for free"
+            onClick={handleViewSignUpClick}
           >
-            <Link
-                to="pricing"
-                spy={true}
-                smooth={true}
-                duration={500}
-                key={100}
-              >
-              Start for free
-            </Link>
+            Start for free
+            {/*<Link*/}
+            {/*    to="pricing"*/}
+            {/*    spy={true}*/}
+            {/*    smooth={true}*/}
+            {/*    duration={500}*/}
+            {/*    key={100}*/}
+            {/*  >*/}
+            {/*  Start for free*/}
+            {/*</Link>*/}
           </Button>
 
 
