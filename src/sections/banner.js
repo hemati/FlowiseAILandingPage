@@ -58,7 +58,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Build LLMs Apps Easily
+            Build Chatbots and LLMs Apps Easily
           </Heading>
           <Text as="p" variant="heroSecondary">
             A UI visual tool for creating customized LLM flows built on top of{" "}
@@ -84,16 +84,18 @@ export default function Banner() {
             <Button
               className="donate__btn"
               variant="secondary"
+              onClick={handleViewSignUpClick}
             >
-              <Link
-                  to="pricing"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  key={1}
-                >
-                Start for free
-              </Link>
+              Start for free
+              {/*<Link*/}
+              {/*    to="pricing"*/}
+              {/*    spy={true}*/}
+              {/*    smooth={true}*/}
+              {/*    duration={500}*/}
+              {/*    key={1}*/}
+              {/*  >*/}
+              {/*  Start for free*/}
+              {/*</Link>*/}
             </Button>
           </Flex>
         </Box>

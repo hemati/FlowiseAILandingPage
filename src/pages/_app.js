@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { initGAds, gtag_report_conversion } from 'ads';
+import { initGAds } from 'ads';
 // Load DM Sans typeface
 import 'typeface-dm-sans';
 

@@ -34,55 +34,51 @@ const packages = [
         isAvailable: true,
       },
       {
-        icon: <IoIosCloseCircle />,
-        text: 'Unlimited number of flows can be created',
-        isAvailable: false,
-      },
-      {
-        icon: <IoIosCloseCircle />,
+        icon: <IoIosCheckmarkCircle />,
         text: 'Premium support from our expert team',
-        isAvailable: false,
+        isAvailable: true,
       }
     ],
     onClickHandler: handleViewSignUpClick
-  },
-  {
-    header: 'Recommended',
-    name: 'Premium Plan',
-    priceWithUnit: '$9.99/',
-    buttonText: 'Coming Soon',
-    buttonEnable: false,
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all predefined flows',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Access to all predefined tools.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited number of flows can be created',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Premium support from our expert team',
-        isAvailable: true,
-      }
-    ],
-    onClickHandler: null
-  },
+  }
+  // ,
+  // {
+  //   header: 'Recommended',
+  //   name: 'Premium Plan',
+  //   priceWithUnit: '$9.99/',
+  //   buttonText: 'Coming Soon',
+  //   buttonEnable: false,
+  //   points: [
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'Ultimate access to all predefined flows',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'Access to all predefined tools.',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'Unlimited number of flows can be created',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'Premium support from our expert team',
+  //       isAvailable: true,
+  //     }
+  //   ],
+  //   onClickHandler: null
+  // },
 ];
 export default function Package() {
   return (
     <section id="pricing" sx={styles.pricing}>
       <Container>
         <SectionHeader
-          title="Plan Options"
+          title="Start for free"
           isWhite={true}
         />
         <Flex
