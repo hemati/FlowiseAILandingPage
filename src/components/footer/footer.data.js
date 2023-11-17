@@ -7,62 +7,26 @@ export default [
         label: "Home",
       },
       {
-        path: "/",
+        path: "mailto:support@langflux.space",
         label: "Customer Support",
       },
       {
         path: "/",
         label: "About Us",
-      },
-      {
-        path: "/",
-        label: "Copyright",
-      },
-      {
-        path: "/",
-        label: "Popular Campaign",
-      },
+      }
     ],
   },
   {
     header: "Contact Us",
     items: [
       {
-        path: "https://calendly.com/henryheng/30min",
-        label: "Book Demo",
-      },
-      {
-        path: "mailto:w.hemati@gmail.com",
+        path: "mailto:info@langflux.space",
         label: "Email",
       },
       {
-        path: "https://discord.gg/GWcGczPk",
+        path: "https://discord.com/invite/PTb8rEGzGz",
         label: "Discord",
-      },
-    ],
-  },
-  {
-    header: "My Account",
-    items: [
-      {
-        path: "/",
-        label: "Press inquiries",
-      },
-      {
-        path: "/",
-        label: "Social media ",
-      },
-      {
-        path: "/",
-        label: "directories",
-      },
-      {
-        path: "/",
-        label: "Images & B-roll",
-      },
-      {
-        path: "/",
-        label: "Permissions",
+        target: "_blank",
       },
     ],
   },
@@ -71,20 +35,16 @@ export default [
     items: [
       {
         path: "/",
-        label: "Application security",
+        label: "Privacy Policy"
       },
       {
         path: "/",
-        label: "Software principles",
+        label: "Imprint",
       },
       {
-        path: "/",
-        label: "Unwanted software policy",
-      },
-      {
-        path: "/",
-        label: "Responsible supply chain",
+        path: "/terms",
+        label: "Terms of Service",
       },
     ],
-  },
+  }
 ];
