@@ -34,11 +34,11 @@ export default [
     header: "Policy",
     items: [
       {
-        path: "/",
+        path: "/privacy",
         label: "Privacy Policy"
       },
       {
-        path: "/",
+        path: "/imprint",
         label: "Imprint",
       },
       {
