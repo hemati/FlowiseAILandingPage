@@ -6,6 +6,7 @@ export default function SEO({
   author = "LangFlux",
   meta,
   title = "Build Chatbots and LLMs Apps Easily",
+  canonical = "https://langflux.space", // Add canonical prop
 }) {
   const metaData = [
     {
@@ -52,6 +53,7 @@ export default function SEO({
   return (
     <Head>
       <title>{title}</title>
+      <link rel="canonical" href={canonical} />
       {metaData.map(({ name, property, content }, i) => (
         <meta
           key={i}
