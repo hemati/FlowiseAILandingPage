@@ -121,9 +121,9 @@ const styles = {
   },
   nav: {
     "align-items": "center",
-    "display": "flex",
     "justify-content": "center",
     mx: "auto",
+    mr: "50px",
     display: "none",
     "@media screen and (min-width: 1024px)": {
       display: "flex",
