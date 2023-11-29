@@ -17,7 +17,7 @@ export default [
   },
   {
     path: "https://docs.flowiseai.com/",
-    label: "Documentation",
+    label: "Docs",
   },
   {
     path: "faq",
