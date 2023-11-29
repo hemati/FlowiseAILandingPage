@@ -60,7 +60,7 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => {
-              if (label === 'Documentation')
+              if (label === 'Docs')
                 return (
                   <a href={path} target="_blank" style={{
                     textDecoration: "none"
