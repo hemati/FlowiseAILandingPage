@@ -23,7 +23,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => {
-              if (label === 'Documentation')
+              if (label === 'Docs')
                 return (
                   <a href={path} target="_blank" sx={styles.a}>
                     {label}</a>
