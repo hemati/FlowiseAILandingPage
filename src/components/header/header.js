@@ -22,19 +22,26 @@ export default function Header({ className }) {
           <Logo src={className === "sticky" ? LogoDark : LogoWhite} />
 
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
-              <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </Link>
-            ))}
+            {menuItems.map(({ path, label }, i) => {
+              if (label === 'Docs')
+                return (
+                  <a href={path} target="_blank" sx={styles.a}>
+                    {label}</a>
+                )
+              return (
+                <Link
+                  activeClass="active"
+                  to={path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  key={i}
+                >
+                  {label}
+                </Link>
+              )
+            })}
           </Flex>
 
           <Button
@@ -50,7 +57,7 @@ export default function Header({ className }) {
           <MobileDrawer />
         </Container>
       </header>
-    </DrawerProvider>
+    </DrawerProvider >
   );
 }
 
@@ -67,6 +74,10 @@ const positionAnim = keyframes`
 `;
 
 const styles = {
+  a: {
+    textDecoration: "none",
+    color: "white"
+  },
   header: {
     color: "white",
     fontWeight: "normal",
@@ -109,7 +120,10 @@ const styles = {
     justifyContent: "space-between",
   },
   nav: {
+    "align-items": "center",
+    "justify-content": "center",
     mx: "auto",
+    mr: "50px",
     display: "none",
     "@media screen and (min-width: 1024px)": {
       display: "flex",

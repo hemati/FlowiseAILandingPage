@@ -16,7 +16,11 @@ export default [
     label: "How It Works",
   },
   {
+    path: "https://docs.flowiseai.com/",
+    label: "Docs",
+  },
+  {
     path: "faq",
     label: "FAQ",
-  },
+  }
 ];
