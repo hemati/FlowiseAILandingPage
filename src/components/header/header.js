@@ -76,7 +76,7 @@ export default function Header({ className }) {
           <MobileDrawer />
         </Container>
       </header>
-    </DrawerProvider>
+    </DrawerProvider >
   );
 }
 
@@ -93,6 +93,10 @@ const positionAnim = keyframes`
 `;
 
 const styles = {
+  a: {
+    textDecoration: "none",
+    color: "white"
+  },
   header: {
     color: "white",
     fontWeight: "normal",
@@ -135,7 +139,10 @@ const styles = {
     justifyContent: "space-between",
   },
   nav: {
+    "align-items": "center",
+    "justify-content": "center",
     mx: "auto",
+    mr: "50px",
     display: "none",
     "@media screen and (min-width: 1024px)": {
       display: "flex",
