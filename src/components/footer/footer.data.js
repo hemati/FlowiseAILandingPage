@@ -3,7 +3,7 @@ export default [
     header: "Section",
     items: [
       {
-        path: "/home",
+        path: "/",
         label: "Home",
       },
       {
