@@ -56,7 +56,7 @@ const TermsOfService = () => {
       </Head>
       <div style={termsStyle}>
         <h1 style={headingStyle}>Terms of Service for LangFlux.space</h1>
-        <p>Last updated: 17th Nov. 2023</p>
+        <p>Last updated: 3rd Dec. 2023</p>
 
         <Section title="Introduction">
         <p>The Service provides a platform for building and deploying language model chains ("LLM Chains") through a user-friendly interface or via an API. It's designed as a no-code/low-code framework to facilitate the development of language applications.</p>
