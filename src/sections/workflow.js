@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Container, Grid, Box, Heading, Text } from "theme-ui";
+import { Container} from "theme-ui";
 import SectionHeader from "components/section-header";
 
-import PatternBG from "assets/patternBG.png";
 import ArrowOdd from "assets/arrowOdd.png";
 import ArrowEven from "assets/arrowEven.png";
 
@@ -44,7 +43,10 @@ export default function WorkFlow() {
           src={"https://general-flowise.s3.amazonaws.com/Introduction.mp4"}
           width="100%"
           controls="controls"
-          autoplay="true"
+          autoPlay="true"
+          loop="true"
+          playsInline
+          muted
         />
       </Container>
     </section>
