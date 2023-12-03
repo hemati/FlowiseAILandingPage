@@ -34,6 +34,10 @@ export default [
     header: "Policy",
     items: [
       {
+        path: "/terms",
+        label: "Terms of Service",
+      },
+      {
         path: "/privacy",
         label: "Privacy Policy"
       },
@@ -41,10 +45,7 @@ export default [
         path: "/imprint",
         label: "Imprint",
       },
-      {
-        path: "/terms",
-        label: "Terms of Service",
-      },
+
     ],
   }
 ];

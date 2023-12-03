@@ -96,6 +96,22 @@ const TermsOfService = () => {
         <p>The Service integrates with Firebase for user authentication and analytics. The terms and conditions of these third-party services are available through their respective platforms and should be reviewed by the user, as they are separate from LangFlux.space.</p>
         </Section>
 
+        <Section title="Open Source Licensing and Attribution">
+          <p>
+            This product includes software developed by Flowise AI, which is licensed under the Apache License, Version 2.0. The Apache License is a free, open-source software license that provides users with certain permissions regarding the use and distribution of the software.
+          </p>
+          <p>
+            A copy of the Apache License, Version 2.0, can be found at <a style={linkStyle} href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">http://www.apache.org/licenses/LICENSE-2.0</a>. This license is provided for informational purposes and forms part of the legal agreement between you and LangFlux.space when you use our Service.
+          </p>
+          <p>
+            We have made certain changes to the original software to better integrate it into our Service. These changes are documented in the source code and are made available as per the terms of the Apache License, Version 2.0.
+          </p>
+          <p>
+            By using our Service, you agree to comply with the terms and conditions of the Apache License, Version 2.0, in addition to the terms and conditions outlined in our Terms of Service.
+          </p>
+        </Section>
+
+
         <Section title="Payment Processing">
         <p>The Service offers a Plus subscription for €10 per month to users who wish to create more than one flow. A 7-day trial period is provided, and users can cancel their subscription towards the end of each subscription period. All payments are processed in Euros, and tax considerations are managed in accordance with EU and German tax laws.</p>
         </Section>
