@@ -25,53 +25,58 @@ const packages = [
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all predefined flows',
+        text: 'Access to all predefined flows',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Free access for all predefined tools.',
+        text: 'Access for all predefined tools.',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
         text: 'Premium support from our expert team',
         isAvailable: true,
-      }
+      },
+      {
+        icon: <IoIosCloseCircle />,
+        text: 'Only 1 flow can be created',
+        isAvailable: true,
+      },
     ],
     onClickHandler: handleViewSignUpClick
   }
-  // ,
-  // {
-  //   header: 'Recommended',
-  //   name: 'Premium Plan',
-  //   priceWithUnit: '$9.99/',
-  //   buttonText: 'Coming Soon',
-  //   buttonEnable: false,
-  //   points: [
-  //     {
-  //       icon: <IoIosCheckmarkCircle />,
-  //       text: 'Ultimate access to all predefined flows',
-  //       isAvailable: true,
-  //     },
-  //     {
-  //       icon: <IoIosCheckmarkCircle />,
-  //       text: 'Access to all predefined tools.',
-  //       isAvailable: true,
-  //     },
-  //     {
-  //       icon: <IoIosCheckmarkCircle />,
-  //       text: 'Unlimited number of flows can be created',
-  //       isAvailable: true,
-  //     },
-  //     {
-  //       icon: <IoIosCheckmarkCircle />,
-  //       text: 'Premium support from our expert team',
-  //       isAvailable: true,
-  //     }
-  //   ],
-  //   onClickHandler: null
-  // },
+  ,
+  {
+    header: 'Recommended',
+    name: 'Premium Plan',
+    priceWithUnit: '$9.99/',
+    buttonText: 'Start for free',
+    buttonEnable: true,
+    points: [
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Access to all predefined flows',
+        isAvailable: true,
+      },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Access to all predefined tools.',
+        isAvailable: true,
+      },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Premium support from our expert team',
+        isAvailable: true,
+      },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Unlimited number of flows can be created',
+        isAvailable: true,
+      },
+    ],
+    onClickHandler: handleViewSignUpClick
+  },
 ];
 export default function Package() {
   return (
