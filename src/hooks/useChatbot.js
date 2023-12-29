@@ -40,7 +40,7 @@ function useChatbot() {
                     backgroundColor: "#f7f8ff",
                     textColor: "#303235",
                     showAvatar: true,
-                    avatarSrc: "/_next/static/images/logo-5d27be3b6a7e6afcb1e5bb680bc0e04c.png",
+                    avatarSrc: "https://yt3.googleusercontent.com/N9N6-kNJ9F7hhSZ6BEvrCp36xculXX7o0D91Ehk67ejC_su0rXVm5806TSBhGCNz5g_LubGH=s176-c-k-c0x00ffffff-no-rj",
                 },
                 userMessage: {
                     backgroundColor: "#3B81F6",
