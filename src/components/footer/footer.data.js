@@ -28,6 +28,11 @@ export default [
         label: "Discord",
         target: "_blank",
       },
+      {
+        path: "https://www.youtube.com/@LangFlux/playlists",
+        label: "Youtube",
+        target: "_blank",
+      },
     ],
   },
   {

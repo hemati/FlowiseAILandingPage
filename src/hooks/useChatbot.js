@@ -12,7 +12,8 @@ function useChatbot() {
     // Dynamically load the script
     const script = document.createElement('script');
     script.type = 'module';
-    script.src = 'https://cdn.jsdelivr.net/gh/hemati/FlowiseChatEmbed/dist/web.js';
+    // script.src = 'https://cdn.jsdelivr.net/gh/hemati/FlowiseChatEmbed/dist/web.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
     script.onload = () => {
       window.Chatbot.init({
         chatflowid: '2ca663d8-6392-4c74-80aa-ff68b1ba883d',
@@ -27,7 +28,8 @@ function useChatbot() {
                 customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
             },
             chatWindow: {
-                welcomeMessage: "Hello! I am an AI assistant build with LangFlux. I can help you with your LLMs. " +
+                title: 'FluxGPT',
+                welcomeMessage: "Hello! I am FluxGPT, an AI assistant build with LangFlux. " +
                     "How can I help you today?",
                 backgroundColor: "#ffffff",
                 height: isMobile ? 400 : 700,  // Set height based on the device type
@@ -38,7 +40,7 @@ function useChatbot() {
                     backgroundColor: "#f7f8ff",
                     textColor: "#303235",
                     showAvatar: true,
-                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
+                    avatarSrc: "/_next/static/images/logo-5d27be3b6a7e6afcb1e5bb680bc0e04c.png",
                 },
                 userMessage: {
                     backgroundColor: "#3B81F6",
