@@ -43,8 +43,8 @@ export default function WorkFlow() {
           src={"https://general-flowise.s3.amazonaws.com/Introduction.mp4"}
           width="100%"
           controls="controls"
-          autoPlay="true"
-          loop="true"
+          autoPlay={true}
+          loop={true}
           playsInline
           muted
         />

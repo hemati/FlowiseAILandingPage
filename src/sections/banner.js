@@ -63,28 +63,28 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             A UI visual tool for creating customized LLM flows built on top of{" "}
             <a
-              href="https://github.com/langchain-ai/langchain"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'inherit', textDecoration: 'underline' }}
+                href="https://github.com/langchain-ai/langchain"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: 'inherit', textDecoration: 'underline'}}
             >
               LangChain
             </a>
             {" "}and{" "}
             <a
-              href="https://github.com/FlowiseAI/Flowise"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'inherit', textDecoration: 'underline', zIndex: 100 }}
+                href="https://github.com/FlowiseAI/Flowise"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: 'inherit', textDecoration: 'underline', zIndex: 100}}
             >
               FlowiseAI
             </a>.
           </Text>
           <Flex>
             <Button
-              className="donate__btn"
-              variant="secondary"
-              onClick={handleViewSignUpClick}
+                className="donate__btn"
+                variant="secondary"
+                onClick={handleViewSignUpClick}
             >
               Start for free
               {/*<Link*/}
