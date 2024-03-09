@@ -50,7 +50,7 @@ const packages = [
   {
     header: 'Recommended',
     name: 'Premium Plan',
-    priceWithUnit: '$9.99/',
+    priceWithUnit: '$59.99/',
     buttonText: 'Start for free',
     buttonEnable: true,
     points: [
